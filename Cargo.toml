@@ -1,0 +1,23 @@
+[package]
+name = "newsinboundr"
+version = "0.1.0"
+authors = ["haro"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+md-5 = "0.9.1"
+serde = "1.0.114"
+chrono = { version = "0.4.13", features = ["serde"] }
+reqwest = { version = "0.10.7" }
+tokio = { version = "0.2.22", features = ["macros", "rt-core"] }
+diesel = { version = "1.4.5", features = ["postgres", "chrono"] }
+dotenv = "0.15.0"
+diesel-derive-enum = { versions = "1.1.0", features = ["postgres"] }
+quick-xml = "0.18.1"
+futures = "0.3.5"
+rss = { version = "1.9.0", features = ["from_url"] }
+atom_syndication = "0.9.0"
+select = "0.5.0"
+tokio-diesel = "0.3.0"
